@@ -2,7 +2,7 @@
 
 Hey there! I built this project to make it super easy to summarize YouTube videos by extracting their transcripts and generating concise summaries using advanced NLP techniques. It’s a Streamlit web app that leverages the YouTube Transcript API to fetch video transcripts and the BART-large-CNN model to create abstractive summaries, all while handling long transcripts with a custom chunking algorithm. Whether you're a student, researcher, or just someone who wants the key points of a video without watching the whole thing, this tool’s got you covered!
 
-Features
+## Features
 
 
 
@@ -26,7 +26,7 @@ Interactive UI: Built with Streamlit, featuring expandable sections to display o
 
 Error Handling: Gracefully handles invalid URLs or missing transcripts with clear user feedback.
 
-Installation
+## Installation
 
 To run this project locally, follow these steps. It’s tested on Python 3.11 in a Google Colab environment, but any Python 3.6+ setup should work.
 
@@ -34,27 +34,27 @@ To run this project locally, follow these steps. It’s tested on Python 3.11 in
 
 
 
-Clone the Repository (once you push it to GitHub):
+## Clone the Repository (once you push it to GitHub):
 
 git clone https://github.com/your-username/nlp-youtube-summarizer.git
 cd nlp-youtube-summarizer
 
 
 
-Install Dependencies:
+## Install Dependencies:
 
 pip install streamlit youtube-transcript-api pytube sentence-transformers transformers torch scikit-learn numpy pandas nltk
 
 
 
-Download NLTK Data:
+## Download NLTK Data:
 
 import nltk
 nltk.download('punkt')
 
 
 
-Run the App:
+## Run the App:
 
 streamlit run app.py
 
@@ -62,7 +62,7 @@ This will launch the app locally at http://localhost:8501.
 
 
 
-Optional: Deploy with ngrok (for public access, as in the Colab setup):
+## Optional: Deploy with ngrok (for public access, as in the Colab setup):
 
 pip install pyngrok
 
@@ -88,7 +88,7 @@ Usage
 
 
 
-Open the app in your browser (local or via ngrok).
+## Open the app in your browser (local or via ngrok).
 
 
 
@@ -172,7 +172,7 @@ Summary Quality: BART-large-CNN is optimized for news articles, so conversationa
 
 Age-Restricted Videos: Currently unsupported due to YouTube API limitations.
 
-Future Improvements
+## Future Improvements
 
 I’m planning to make this project even better! Here are some ideas:
 
